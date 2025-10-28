@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Webdevelopment Labo's</title>
+    <style>
+        .opdrachten {
+            display: none;
+            margin-left: 20px;
+        }
+        .labo-link {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welkom bij mijn Webdevelopment Labo's</h1>
+    <ul>
+        <li>
+            <span class="labo-link" onclick="toggleOpdrachten('labo2')">Labo 2</span>
+            <ul id="labo2" class="opdrachten">
+                <li><a href="labo_2/labo_4/opdracht_3.html">Opdracht 3</a></li>
+                <li><a href="labo_2/labo_4/opdracht_4.html">Opdracht 4</a></li>
+                <li><a href="labo_2/labo_4/opdracht_5.html">Opdracht 5</a></li>
+                <li><a href="labo_2/labo_4/opdracht_6.html">Opdracht 6</a></li>
+                <li><a href="labo_2/labo_4/opdracht_7.html">Opdracht 7</a></li>
+                <li><a href="labo_2/labo_4/opdracht_8.html">Opdracht 8</a></li>
+                <li><a href="labo_2/labo_4/opdracht_9.html">Opdracht 9</a></li>
+                <li><a href="labo_2/labo_4/opdracht_10.html">Opdracht 10</a></li>
+                <li><a href="labo_2/labo_4/opdracht_11.html">Opdracht 11</a></li>
+                <li><a href="labo_2/labo_4/opdracht_12.html">Opdracht 12</a></li>
+                <li><a href="labo_2/labo_4/opdracht_13.html">Opdracht 13</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="labo-link" onclick="toggleOpdrachten('labo3')">Labo 3 - Homepage</span>
+            <ul id="labo3" class="opdrachten">
+                <li><a href="labo_3/homepage/">Homepage</a></li>
+                <li><a href="labo_3/homepage/contact/">Contact</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="labo-link" onclick="toggleOpdrachten('labo4')">Labo 4</span>
+            <ul id="labo4" class="opdrachten">
+                <li><a href="labo_4/Opdracht 3/">Opdracht 3</a></li>
+                <li><a href="labo_4/Opdracht 5/">Opdracht 5</a></li>
+                <li><a href="labo_4/Homepagina Labo4.html">Homepage Labo 4</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="labo-link" onclick="toggleOpdrachten('labo5')">Labo 5 - Opdracht 6</span>
+            <ul id="labo5" class="opdrachten">
+                <li><a href="labo_5/">Opdracht 6</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        function toggleOpdrachten(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
