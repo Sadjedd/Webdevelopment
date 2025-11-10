@@ -18,5 +18,5 @@ body {
 }
 
 .checklist li.checked {
-    background-image: url('f');
+    background-image: url('checked.png');
 }
