@@ -1,0 +1,70 @@
+/* ========== BASIS TABEL STYLING ========== */
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+table th,
+table td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+/* ========== VRIENDEN TABEL STYLING ========== */
+
+#vrienden table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#vrienden th,
+#vrienden td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #004488;
+}
+
+#vrienden thead {
+    background: linear-gradient(to bottom, #004488 0%, #4169E1 100%);
+    color: white;
+    font-weight: bold;
+}
+
+/* Zebra striping - afwisselende kleuren */
+#vrienden tbody tr:nth-child(even) {
+    background-color: #dbe9f4;
+}
+
+#vrienden tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect */
+#vrienden tbody tr:hover {
+    background-color: #b3d9ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Afgeronde hoeken */
+#vrienden thead tr th:first-child {
+    border-top-left-radius: 15px;
+}
+
+#vrienden thead tr th:last-child {
+    border-top-right-radius: 15px;
+}
+
+#vrienden tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+#vrienden tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}

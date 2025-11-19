@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender December 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 2px solid #333;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Maand hoofding */
+        .hoofding {
+            background-color: rgb(170, 170, 200);
+            color: black;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Dag headers (Sun, Mon, Tue, etc.) */
+        thead th {
+            background: rgb(35, 37, 70);
+            color: rgb(200, 190, 240);
+            padding: 10px;
+            border: 1px dotted #666;
+            font-weight: bold;
+        }
+
+        /* Normale dag cellen */
+        td {
+            width: 60px;
+            height: 60px;
+            padding: 7px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px dotted #999;
+            background-color: white;
+            font-size: 1.1em;
+        }
+
+        /* Weekends (eerste en laatste kolom) - ZONDER extra class! */
+        tbody td:first-child,
+        tbody td:last-child {
+            background: rgb(255, 220, 220);
+        }
+
+        /* Dagen van andere maand (grijs) */
+        tbody td.andereMaand {
+            color: gray;
+            background: rgb(235, 235, 235);
+        }
+
+        /* Feestdagen */
+        tbody td.feestdag {
+            background: rgb(250, 120, 120);
+            font-weight: bold;
+        }
+
+        /* Feestdag in andere maand - specificiteit is belangrijk! */
+        tbody td.andereMaand.feestdag {
+            background-color: rgb(235, 235, 235);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th class="hoofding" colspan="7">December 2025</th>
+    </tr>
+    <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="andereMaand">30</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td class="feestdag">6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td class="feestdag">25</td>
+        <td>26</td>
+        <td>27</td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+        <td class="feestdag andereMaand">1</td>
+        <td class="andereMaand">2</td>
+        <td class="andereMaand">3</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
